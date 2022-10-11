@@ -1,6 +1,6 @@
 import 'package:flutter_pagination_code_snippet/data/data_source/first_page.dart';
-import 'package:flutter_pagination_code_snippet/data/data_source/result.dart';
 import 'package:flutter_pagination_code_snippet/data/data_source/second_page.dart';
+import 'package:flutter_pagination_code_snippet/services/state/result/result.dart';
 import 'package:http/http.dart' as http;
 
 class DbHelper {

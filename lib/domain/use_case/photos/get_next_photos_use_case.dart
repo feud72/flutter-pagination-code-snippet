@@ -1,6 +1,6 @@
-import 'package:flutter_pagination_code_snippet/data/data_source/result.dart';
 import 'package:flutter_pagination_code_snippet/domain/models/photos.dart';
 import 'package:flutter_pagination_code_snippet/domain/repository/repository.dart';
+import 'package:flutter_pagination_code_snippet/services/state/result/result.dart';
 
 class GetNextPhotosUseCase {
   final Repository repository;
