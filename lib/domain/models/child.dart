@@ -5,10 +5,11 @@ part 'child.g.dart';
 
 @freezed
 class Child with _$Child {
+  @JsonSerializable(fieldRename: FieldRename.snake)
   const factory Child({
     required int id,
     required String name,
-    @JsonSerializable(fieldRename: FieldRename.snake) required String? nameKor,
+    required String? nameKor,
   }) = _Child;
 
   factory Child.fromJson(Map<String, dynamic> json) => _$ChildFromJson(json);

@@ -22,7 +22,6 @@ Child _$ChildFromJson(Map<String, dynamic> json) {
 mixin _$Child {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  @JsonSerializable(fieldRename: FieldRename.snake)
   String? get nameKor => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -34,10 +33,7 @@ mixin _$Child {
 abstract class $ChildCopyWith<$Res> {
   factory $ChildCopyWith(Child value, $Res Function(Child) then) =
       _$ChildCopyWithImpl<$Res>;
-  $Res call(
-      {int id,
-      String name,
-      @JsonSerializable(fieldRename: FieldRename.snake) String? nameKor});
+  $Res call({int id, String name, String? nameKor});
 }
 
 /// @nodoc
@@ -76,10 +72,7 @@ abstract class _$$_ChildCopyWith<$Res> implements $ChildCopyWith<$Res> {
   factory _$$_ChildCopyWith(_$_Child value, $Res Function(_$_Child) then) =
       __$$_ChildCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {int id,
-      String name,
-      @JsonSerializable(fieldRename: FieldRename.snake) String? nameKor});
+  $Res call({int id, String name, String? nameKor});
 }
 
 /// @nodoc
@@ -115,12 +108,10 @@ class __$$_ChildCopyWithImpl<$Res> extends _$ChildCopyWithImpl<$Res>
 }
 
 /// @nodoc
-@JsonSerializable()
+
+@JsonSerializable(fieldRename: FieldRename.snake)
 class _$_Child implements _Child {
-  const _$_Child(
-      {required this.id,
-      required this.name,
-      @JsonSerializable(fieldRename: FieldRename.snake) required this.nameKor});
+  const _$_Child({required this.id, required this.name, required this.nameKor});
 
   factory _$_Child.fromJson(Map<String, dynamic> json) =>
       _$$_ChildFromJson(json);
@@ -130,7 +121,6 @@ class _$_Child implements _Child {
   @override
   final String name;
   @override
-  @JsonSerializable(fieldRename: FieldRename.snake)
   final String? nameKor;
 
   @override
@@ -173,8 +163,7 @@ abstract class _Child implements Child {
   const factory _Child(
       {required final int id,
       required final String name,
-      @JsonSerializable(fieldRename: FieldRename.snake)
-          required final String? nameKor}) = _$_Child;
+      required final String? nameKor}) = _$_Child;
 
   factory _Child.fromJson(Map<String, dynamic> json) = _$_Child.fromJson;
 
@@ -183,7 +172,6 @@ abstract class _Child implements Child {
   @override
   String get name;
   @override
-  @JsonSerializable(fieldRename: FieldRename.snake)
   String? get nameKor;
   @override
   @JsonKey(ignore: true)
